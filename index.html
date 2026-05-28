@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Havantures Caribe — Agence francophone spécialisée en excursions privées Riviera Maya, voyages sur mesure Mexique, transferts et coordination hôtel. Playa del Carmen, Cancún, Tulum." />
+  <meta name="keywords" content="excursion privée Riviera Maya, agence francophone Mexique, voyage sur mesure Mexique, excursions Cancun, séjour luxe Mexique, excursion privé playa del carmen, agence francophone playa del carmen, tours privé playa del carmen, agence francophone riviera maya, voyage sur mesure playa del carmen" />
+  <meta property="og:title" content="Havantures Caribe | Excursions Privées Riviera Maya" />
+  <meta property="og:description" content="Votre agence francophone de référence pour les excursions privées et voyages sur mesure au Mexique." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.havanturescaribe.com" />
+  <meta property="og:image" content="https://www.havanturescaribe.com/og-cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0F4C4C" />
+  <title>Havantures Caribe | Agence Francophone Riviera Maya · Excursions Privées · Voyage Sur Mesure</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%230F4C4C'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23C8A96B'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Havantures Caribe",
+    "url": "https://www.havanturescaribe.com",
+    "email": "info@havanturescaribe.com",
+    "description": "Agence francophone spécialisée en excursions privées Riviera Maya et voyages sur mesure Mexique",
+    "areaServed": ["Riviera Maya", "Playa del Carmen", "Cancún", "Tulum", "Mexique"],
+    "availableLanguage": ["French", "Spanish", "English"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- LOADER -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="22" stroke="#28B8B2" stroke-width="1.5" stroke-dasharray="4 2"/>
+          <path d="M24 8 C24 8 32 16 32 24 C32 32 24 40 24 40 C24 40 16 32 16 24 C16 16 24 8 24 8Z" fill="#28B8B2" opacity="0.3"/>
+          <circle cx="24" cy="24" r="4" fill="#C8A96B"/>
+        </svg>
+      </div>
+      <p class="loader-text">Havantures Caribe</p>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" aria-label="Havantures Caribe — Accueil">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="16" cy="16" r="14.5" stroke="currentColor" stroke-width="1"/>
+          <path d="M16 4 C16 4 22 10 22 16 C22 22 16 28 16 28 C16 28 10 22 10 16 C10 10 16 4 16 4Z" fill="currentColor" opacity="0.25"/>
+          <circle cx="16" cy="16" r="3" fill="#C8A96B"/>
+        </svg>
+        <span class="nav-brand">Havantures<em>Caribe</em></span>
+      </a>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#carte">Carte</a></li>
+        <li><a href="#process">Notre Approche</a></li>
+        <li><a href="#temoignages">Avis</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="https://wa.me/524491234567" class="nav-cta" target="_blank" rel="noopener noreferrer" aria-label="Nous contacter sur WhatsApp">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Nous écrire
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero hero--drone" aria-label="Bienvenue chez Havantures Caribe">
+    <div class="hero-media">
+      <div class="hero-overlay"></div>
+      <div class="hero-video-bg" aria-hidden="true">
+        <div class="hero-gradient-canvas"></div>
+      </div>
+    </div>
+    <!-- White frame overlay (screenshot style) -->
+    <div class="hero-frame" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow" data-gsap="fade-up">
+        <span class="eyebrow-tag">RIVIERA MAYA · MEXIQUE</span>
+      </div>
+      <h1 class="hero-title" data-gsap="fade-up" data-delay="0.15">
+        Votre guide<br/>
+        <em>francophone dédié</em>
+      </h1>
+      <p class="hero-subtitle" data-gsap="fade-up" data-delay="0.3">
+        Excursions privées, voyages sur mesure &amp; coordination complète.<br/>
+        De Cancún à Playa del Carmen, nous créons votre Mexique idéal.
+      </p>
+      <div class="hero-actions" data-gsap="fade-up" data-delay="0.45">
+        <a href="#destinations" class="btn btn-primary">Explorer les destinations</a>
+        <a href="https://wa.me/524491234567" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Devis gratuit WhatsApp
+        </a>
+      </div>
+
+      <!-- DESTINATION CHIPS -->
+      <div class="hero-discover" data-gsap="fade-up" data-delay="0.55">
+        <span class="hero-discover-label">Destinations populaires :</span>
+        <div class="hero-chips-row" role="list">
+          <a href="https://wa.me/524491234567?text=Chich%C3%A9n+Itz%C3%A1" class="hero-chip" target="_blank" rel="noopener noreferrer" role="listitem">Chichén Itzá</a>
+          <a href="https://wa.me/524491234567?text=Tulum+Coba" class="hero-chip" target="_blank" rel="noopener noreferrer" role="listitem">Tulum · Cobá</a>
+          <a href="https://wa.me/524491234567?text=Holbox" class="hero-chip" target="_blank" rel="noopener noreferrer" role="listitem">Holbox</a>
+          <a href="https://wa.me/524491234567?text=Bacalar" class="hero-chip" target="_blank" rel="noopener noreferrer" role="listitem">Bacalar</a>
+          <a href="https://wa.me/524491234567?text=Cozumel" class="hero-chip" target="_blank" rel="noopener noreferrer" role="listitem">Cozumel</a>
+          <a href="https://wa.me/524491234567?text=Requins+Baleines" class="hero-chip hero-chip--hot" target="_blank" rel="noopener noreferrer" role="listitem">🐋 Requins Baleines</a>
+        </div>
+      </div>
+
+      <!-- MINI DESTINATION PREVIEWS -->
+      <div class="hero-mini-dests" data-gsap="fade-up" data-delay="0.68" aria-label="Aperçu des destinations">
+        <a href="https://wa.me/524491234567?text=Chich%C3%A9n+Itz%C3%A1" class="mini-dest" target="_blank" rel="noopener noreferrer">
+          <div class="mini-dest-img mini-dest--chichen"></div>
+          <span>Chichén Itzá</span>
+        </a>
+        <a href="https://wa.me/524491234567?text=Tulum" class="mini-dest" target="_blank" rel="noopener noreferrer">
+          <div class="mini-dest-img mini-dest--tulum"></div>
+          <span>Tulum</span>
+        </a>
+        <a href="https://wa.me/524491234567?text=Holbox" class="mini-dest" target="_blank" rel="noopener noreferrer">
+          <div class="mini-dest-img mini-dest--holbox"></div>
+          <span>Holbox</span>
+        </a>
+        <a href="https://wa.me/524491234567?text=Bacalar" class="mini-dest" target="_blank" rel="noopener noreferrer">
+          <div class="mini-dest-img mini-dest--bacalar"></div>
+          <span>Bacalar</span>
+        </a>
+        <a href="https://wa.me/524491234567?text=Cozumel" class="mini-dest" target="_blank" rel="noopener noreferrer">
+          <div class="mini-dest-img mini-dest--cozumel"></div>
+          <span>Cozumel</span>
+        </a>
+        <a href="https://wa.me/524491234567?text=Isla+Contoy" class="mini-dest" target="_blank" rel="noopener noreferrer">
+          <div class="mini-dest-img mini-dest--contoy"></div>
+          <span>Isla Contoy</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Découvrir</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- INTRO STRIP -->
+  <section class="intro-strip" aria-label="Notre promesse">
+    <div class="container">
+      <p class="intro-text" data-gsap="fade-up">
+        Depuis <strong>Playa del Carmen</strong>, nous concevons chaque voyage comme une œuvre unique — 
+        des <strong>excursions privées Riviera Maya</strong> aux <strong>séjours luxe Mexique</strong> 
+        entièrement orchestrés, avec votre guide francophone dédié.
+      </p>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS — editorial section 3 style -->
+  <section class="highlights-section" aria-label="L'expérience Havantures">
+    <div class="hl-split">
+      <div class="hl-photo">
+        <div class="hl-photo-inner hl-photo--cenote"></div>
+        <div class="hl-photo-badge">
+          <span class="hl-badge-num" data-count="98">0</span><span class="hl-badge-pct">%</span>
+          <span class="hl-badge-label">de voyageurs satisfaits</span>
+        </div>
+      </div>
+      <div class="hl-content">
+        <span class="section-tag" data-gsap="fade-up">L'expérience Havantures</span>
+        <h2 class="hl-title" data-gsap="fade-up" data-delay="0.1">
+          Pas un touriste.<br/><em>Un privilégié.</em>
+        </h2>
+        <p class="hl-lead" data-gsap="fade-up" data-delay="0.2">
+          Chaque voyage que nous créons est unique. Nous connaissons les cenotes secrets, les tables que vous ne trouverez pas sur TripAdvisor, les guides qui transmettent leur passion.
+        </p>
+        <div class="hl-features" data-gsap="fade-up" data-delay="0.3">
+          <div class="hl-feat">
+            <div class="hl-feat-icon" aria-hidden="true">
+              <!-- Étoile de mer -->
+              <svg viewBox="0 0 36 36" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 3 L21 13 L31 13 L23 19.5 L26 30 L18 23.5 L10 30 L13 19.5 L5 13 L15 13 Z" fill="#C8A96B" stroke="#dfc08a" stroke-width="0.8" stroke-linejoin="round"/>
+                <circle cx="18" cy="18" r="3" fill="#0F4C4C"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Accès privilégiés</strong>
+              <span>Sites avant l'ouverture, expériences non-listées</span>
+            </div>
+          </div>
+          <div class="hl-feat">
+            <div class="hl-feat-icon" aria-hidden="true">
+              <!-- Poisson tropical -->
+              <svg viewBox="0 0 36 36" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28 18 Q20 9 6 12 Q14 18 6 24 Q20 27 28 18 Z" fill="#28B8B2"/>
+                <path d="M28 18 L34 12 L34 24 Z" fill="#C8A96B"/>
+                <circle cx="23" cy="15" r="1.8" fill="white"/>
+                <circle cx="23.4" cy="15.2" r="0.8" fill="#0F4C4C"/>
+                <path d="M10 15 Q14 11 18 15" stroke="white" stroke-width="0.8" fill="none" opacity="0.5"/>
+                <path d="M10 21 Q14 17 18 21" stroke="white" stroke-width="0.8" fill="none" opacity="0.5"/>
+              </svg>
+            </div>
+            <div>
+              <strong>100% en français
+                <svg class="flag-fr" width="22" height="14" viewBox="0 0 22 14" xmlns="http://www.w3.org/2000/svg" aria-label="Drapeau français" role="img">
+                  <rect width="7.33" height="14" fill="#0055A4"/>
+                  <rect x="7.33" width="7.34" height="14" fill="#FFFFFF"/>
+                  <rect x="14.67" width="7.33" height="14" fill="#EF4135"/>
+                </svg>
+              </strong>
+              <span>De la réservation au retour à l'hôtel</span>
+            </div>
+          </div>
+          <div class="hl-feat">
+            <div class="hl-feat-icon" aria-hidden="true">
+              <!-- Quetzal -->
+              <svg viewBox="0 0 36 36" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="18" cy="12" rx="6" ry="7" fill="#28B8B2"/>
+                <circle cx="18" cy="7" r="4.5" fill="#1a9490"/>
+                <circle cx="16.5" cy="6.5" r="1" fill="white"/>
+                <circle cx="19.5" cy="6.5" r="1" fill="white"/>
+                <circle cx="16.8" cy="6.7" r="0.45" fill="#0F4C4C"/>
+                <circle cx="19.8" cy="6.7" r="0.45" fill="#0F4C4C"/>
+                <path d="M12 11 Q7 8 5 15 Q10 15 12 17" fill="#28B8B2" opacity="0.8"/>
+                <path d="M24 11 Q29 8 31 15 Q26 15 24 17" fill="#28B8B2" opacity="0.8"/>
+                <path d="M14 19 Q18 22 22 19 L21 27 Q18 32 15 27 Z" fill="#C8A96B"/>
+                <path d="M18 27 Q17 31 16.5 34" stroke="#28B8B2" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Réponse sous 24h</strong>
+              <span>Devis personnalisé, sans engagement</span>
+            </div>
+          </div>
+          <div class="hl-feat">
+            <div class="hl-feat-icon" aria-hidden="true">
+              <!-- Pyramide Maya -->
+              <svg viewBox="0 0 36 36" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="18,4 32,30 4,30" fill="#C8A96B" stroke="#dfc08a" stroke-width="0.5"/>
+                <rect x="15" y="20" width="6" height="10" fill="#0F4C4C" opacity="0.45"/>
+                <line x1="10" y1="30" x2="14.5" y2="17" stroke="#0F4C4C" stroke-width="0.6" opacity="0.3"/>
+                <line x1="26" y1="30" x2="21.5" y2="17" stroke="#0F4C4C" stroke-width="0.6" opacity="0.3"/>
+                <circle cx="18" cy="4" r="2" fill="#28B8B2"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Partenaires locaux</strong>
+              <span>Réseau de confiance depuis plus de 10 ans sur place</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/524491234567?text=Bonjour%20Havantures%20Caribe%20!" class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-gsap="fade-up" data-delay="0.4">
+          Démarrer mon voyage →
+        </a>
+      </div>
+    </div>
+    <!-- Mosaic strip -->
+    <div class="hl-mosaic" aria-hidden="true">
+      <div class="hl-mosaic-item hl-m--tulum"></div>
+      <div class="hl-mosaic-item hl-m--cenote"></div>
+      <div class="hl-mosaic-item hl-m--holbox"></div>
+      <div class="hl-mosaic-item hl-m--chichen"></div>
+      <div class="hl-mosaic-item hl-m--bacalar"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services section" aria-labelledby="services-title">
+    <div class="container">
+      <div class="section-header" data-gsap="fade-up">
+        <span class="section-tag">Ce que nous faisons</span>
+        <h2 id="services-title" class="section-title">Une expertise, <em>trois piliers</em></h2>
+        <p class="section-desc">De l'excursion privée à la coordination complète, nous gérons chaque détail pour que vous ne viviez que l'essentiel : l'émerveillement.</p>
+      </div>
+      <div class="services-grid" role="list">
+
+        <article class="service-card" data-gsap="fade-up" data-delay="0" role="listitem">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 4C11.163 4 4 11.163 4 20s7.163 16 16 16 16-7.163 16-16S28.837 4 20 4z" stroke="#28B8B2" stroke-width="1.5" fill="none"/>
+              <path d="M20 10v10l6 4" stroke="#C8A96B" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="2" fill="#28B8B2"/>
+            </svg>
+          </div>
+          <div class="service-num" aria-hidden="true">01</div>
+          <h3 class="service-title">Excursions Privées</h3>
+          <p class="service-desc">Chichén Itzá, Tulum, Coba, Bacalar, Holbox, Isla Contoy — chaque destination revisitée en exclusivité avec votre guide francophone. Pas de foule, pas de compromis.</p>
+          <ul class="service-list" aria-label="Types d'excursions">
+            <li>Excursions privées Riviera Maya</li>
+            <li>Tours privés Playa del Carmen</li>
+            <li>Excursions Cancún sur mesure</li>
+            <li>Sites mayas &amp; cenotes</li>
+          </ul>
+          <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20souhaite%20plus%20d'infos%20sur%20vos%20excursions%20priv%C3%A9es" class="service-link" target="_blank" rel="noopener noreferrer">
+            En savoir plus
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card service-card--featured" data-gsap="fade-up" data-delay="0.1" role="listitem">
+          <div class="service-badge">Plus demandé</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 32L20 8l12 24" stroke="#C8A96B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M11 26h18" stroke="#28B8B2" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="8" r="2.5" fill="#28B8B2"/>
+            </svg>
+          </div>
+          <div class="service-num" aria-hidden="true">02</div>
+          <h3 class="service-title">Travel Planner Luxe</h3>
+          <p class="service-desc">Votre séjour pensé de A à Z. Sélection des meilleurs hôtels, restaurants confidentiels, expériences exclusives et itinéraire sur-mesure. Voyage sur mesure Mexique, comme vous en avez rêvé.</p>
+          <ul class="service-list" aria-label="Inclus dans le travel planning">
+            <li>Voyage sur mesure Playa del Carmen</li>
+            <li>Sélection hôtels boutique &amp; luxe</li>
+            <li>Expériences exclusives non listées</li>
+            <li>Concierge 24h francophone</li>
+          </ul>
+          <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20souhaite%20cr%C3%A9er%20mon%20voyage%20sur%20mesure" class="service-link" target="_blank" rel="noopener noreferrer">
+            Créer mon voyage
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card" data-gsap="fade-up" data-delay="0.2" role="listitem">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="10" width="28" height="20" rx="3" stroke="#28B8B2" stroke-width="1.5" fill="none"/>
+              <path d="M6 16h28" stroke="#28B8B2" stroke-width="1.5"/>
+              <path d="M14 24h12" stroke="#C8A96B" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="6" r="2" fill="#C8A96B"/>
+              <path d="M20 8v2" stroke="#C8A96B" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="service-num" aria-hidden="true">03</div>
+          <h3 class="service-title">Coordination Complète</h3>
+          <p class="service-desc">Transferts aéroport, réservation d'hôtels, billets de vols, activités privées — nous coordonnons chaque étape pour un séjour luxe Mexique sans la moindre friction.</p>
+          <ul class="service-list" aria-label="Services de coordination">
+            <li>Transferts Cancún privés</li>
+            <li>Coordination hôtel + vol</li>
+            <li>Logistique groupe &amp; famille</li>
+            <li>Assistance 24/7 en français</li>
+          </ul>
+          <a href="https://wa.me/524491234567?text=Bonjour%2C%20j%27ai%20besoin%20d%27aide%20pour%20organiser%20mon%20s%C3%A9jour" class="service-link" target="_blank" rel="noopener noreferrer">
+            Organiser mon séjour
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAND -->
+  <div class="stats-band" aria-label="Nos résultats" data-gsap="fade-up">
+    <div class="container">
+      <div class="stats-row">
+        <div class="stats-item">
+          <strong class="stats-num" data-count="500">0</strong><span>+</span>
+          <span class="stats-label">Voyageurs accompagnés</span>
+        </div>
+        <div class="stats-sep" aria-hidden="true">·</div>
+        <div class="stats-item">
+          <strong class="stats-num" data-count="20">0</strong><span>+</span>
+          <span class="stats-label">Destinations proposées</span>
+        </div>
+        <div class="stats-sep" aria-hidden="true">·</div>
+        <div class="stats-item">
+          <strong class="stats-num" data-count="98">0</strong><span>%</span>
+          <span class="stats-label">Satisfaction client</span>
+        </div>
+        <div class="stats-sep" aria-hidden="true">·</div>
+        <div class="stats-item">
+          <strong class="stats-num" data-count="10">0</strong><span>+ ans</span>
+          <span class="stats-label">D'expérience locale</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DESTINATIONS -->
+  <section id="destinations" class="destinations section" aria-labelledby="destinations-title">
+    <div class="container">
+      <div class="section-header" data-gsap="fade-up">
+        <span class="section-tag">Riviera Maya &amp; au-delà</span>
+        <h2 id="destinations-title" class="section-title">Nos <em>destinations</em></h2>
+        <p class="section-desc">De la jungle au turquoise, chaque lieu révèle une facette unique du Mexique. Choisissez vos envies, nous dessinons l'itinéraire.</p>
+      </div>
+      <div class="destinations-grid" role="list">
+        <article class="dest-card dest-card--large" data-gsap="fade-up" role="listitem">
+          <div class="dest-img dest-img--chichen" role="img" aria-label="Chichén Itzá, site maya"></div>
+          <div class="dest-content">
+            <span class="dest-cat">TIERRA · Ruines Mayas</span>
+            <h3 class="dest-name">Chichén Itzá</h3>
+            <p class="dest-desc">Marchez sur les traces des anciens Maya, guide francophone inclus. Cenote sacré &amp; Valladolid.</p>
+            <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20voudrais%20r%C3%A9server%20l%27excursion%20Chich%C3%A9n%20Itz%C3%A1" class="dest-cta-inline" target="_blank" rel="noopener noreferrer">Demander un devis →</a>
+          </div>
+          <div class="dest-hover-cta">
+            <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20voudrais%20r%C3%A9server%20l%27excursion%20Chich%C3%A9n%20Itz%C3%A1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Demander un devis</a>
+          </div>
+        </article>
+        <article class="dest-card" data-gsap="fade-up" data-delay="0.1" role="listitem">
+          <div class="dest-img dest-img--tulum" role="img" aria-label="Tulum, ruines en bord de mer"></div>
+          <div class="dest-content">
+            <span class="dest-cat">TIERRA · Nature &amp; Histoire</span>
+            <h3 class="dest-name">Tulum &amp; Cobá</h3>
+            <p class="dest-desc">La perle maya en bord de mer rencontre la jungle et la hauteur.</p>
+            <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20voudrais%20r%C3%A9server%20l%27excursion%20Tulum%20Coba" class="dest-cta-inline" target="_blank" rel="noopener noreferrer">Demander un devis →</a>
+          </div>
+          <div class="dest-hover-cta">
+            <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20voudrais%20r%C3%A9server%20l%27excursion%20Tulum%20Coba" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Demander un devis</a>
+          </div>
+        </article>
+        <article class="dest-card" data-gsap="fade-up" data-delay="0.15" role="listitem">
+          <div class="dest-img dest-img--holbox" role="img" aria-label="Holbox, île paradisiaque"></div>
+          <div class="dest-content">
+            <span class="dest-cat">CIELO · Île &amp; Évasion</span>
+            <h3 class="dest-name">Holbox</h3>
+            <p class="dest-desc">L'île sans voiture au bout du monde. Flamants roses, eaux turquoise et quiétude absolue.</p>
+            <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20voudrais%20visiter%20Holbox" class="dest-cta-inline" target="_blank" rel="noopener noreferrer">Demander un devis →</a>
+          </div>
+          <div class="dest-hover-cta">
+            <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20voudrais%20visiter%20Holbox" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Demander un devis</a>
+          </div>
+        </article>
+        <article class="dest-card" data-gsap="fade-up" data-delay="0.2" role="listitem">
+          <div class="dest-img dest-img--bacalar" role="img" aria-label="Bacalar, lagune aux sept couleurs"></div>
+          <div class="dest-content">
+            <span class="dest-cat">AGUA · Lagune</span>
+            <h3 class="dest-name">Bacalar</h3>
+            <p class="dest-desc">La lagune aux sept couleurs. Un spectacle naturel hypnotique, loin des circuits touristiques.</p>
+            <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20voudrais%20visiter%20Bacalar" class="dest-cta-inline" target="_blank" rel="noopener noreferrer">Demander un devis →</a>
+          </div>
+          <div class="dest-hover-cta">
+            <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20voudrais%20visiter%20Bacalar" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Demander un devis</a>
+          </div>
+        </article>
+        <article class="dest-card" data-gsap="fade-up" data-delay="0.25" role="listitem">
+          <div class="dest-img dest-img--cozumel" role="img" aria-label="Cozumel, plongée et récifs"></div>
+          <div class="dest-content">
+            <span class="dest-cat">AGUA · Plongée</span>
+            <h3 class="dest-name">Cozumel</h3>
+            <p class="dest-desc">L'un des plus beaux récifs coralliens du monde. Snorkeling &amp; vie marine en splendeur.</p>
+            <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20voudrais%20visiter%20Cozumel" class="dest-cta-inline" target="_blank" rel="noopener noreferrer">Demander un devis →</a>
+          </div>
+          <div class="dest-hover-cta">
+            <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20voudrais%20visiter%20Cozumel" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Demander un devis</a>
+          </div>
+        </article>
+        <article class="dest-card dest-card--whale" data-gsap="fade-up" data-delay="0.3" role="listitem">
+          <div class="dest-img dest-img--baleines" role="img" aria-label="Requins baleines, Riviera Maya"></div>
+          <div class="dest-content">
+            <span class="dest-cat">AGUA · Expérience Rare</span>
+            <h3 class="dest-name">Requins Baleines</h3>
+            <p class="dest-desc">Nager avec les géants des mers — une expérience réservée à quelques privilégiés, saison juin–sept.</p>
+            <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20voudrais%20nager%20avec%20les%20requins%20baleines" class="dest-cta-inline" target="_blank" rel="noopener noreferrer">Demander un devis →</a>
+          </div>
+          <div class="dest-hover-cta">
+            <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20voudrais%20nager%20avec%20les%20requins%20baleines" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Demander un devis</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARTE RIVIERA MAYA -->
+  <section id="carte" class="map-section section" aria-labelledby="carte-title">
+    <div class="container">
+      <div class="section-header" data-gsap="fade-up">
+        <span class="section-tag">Riviera Maya · Yucatan</span>
+        <h2 id="carte-title" class="section-title">La carte de <em>vos aventures</em></h2>
+        <p class="section-desc">De Cancún à Bacalar, découvrez les lieux qui nous font vibrer — chaque point est une histoire à vivre.</p>
+      </div>
+      <div class="map-wrapper" data-gsap="fade-up" data-delay="0.15">
+        <div id="leaflet-riviera" style="height:520px;border-radius:16px;overflow:hidden;"></div>
+        <div style="display:none"><svg class="riviera-map" viewBox="0 0 700 620" xmlns="http://www.w3.org/2000/svg" aria-label="Carte de la Riviera Maya avec destinations touristiques" role="img">
+          <!-- Mer des Caraïbes -->
+          <rect width="700" height="620" fill="#C8EEFF" rx="16"/>
+          <!-- Golfe du Mexique (haut gauche) -->
+          <ellipse cx="80" cy="80" rx="120" ry="90" fill="#A8DCFF" opacity="0.5"/>
+
+          <!-- Péninsule du Yucatan — contour -->
+          <path d="
+            M 60 0
+            L 60 40 Q 55 60 60 80
+            Q 65 120 80 150
+            Q 95 190 100 220
+            Q 108 260 110 300
+            Q 112 340 115 370
+            Q 118 400 120 430
+            Q 124 460 130 490
+            Q 138 520 150 545
+            Q 165 568 185 580
+            Q 205 592 230 598
+            Q 260 604 290 605
+            Q 320 606 350 604
+            Q 380 601 405 592
+            Q 425 582 440 568
+            Q 456 552 465 530
+            Q 476 505 480 475
+            Q 485 445 485 410
+            Q 485 375 480 345
+            Q 474 312 465 282
+            Q 455 250 445 222
+            Q 432 190 415 162
+            Q 396 132 372 106
+            Q 345 78 315 55
+            Q 285 32 255 18
+            Q 225 6 195 2
+            Q 155 -2 120 0
+            L 60 0 Z
+          " fill="#E8F5E0" stroke="#5a8a4a" stroke-width="1.5"/>
+
+          <!-- Côte caraïbe (est) -->
+          <path d="
+            M 480 100
+            Q 490 130 495 160
+            Q 500 195 502 230
+            Q 504 265 503 300
+            Q 502 340 498 375
+            Q 493 410 485 440
+            Q 477 468 465 492
+            Q 450 518 432 538
+            Q 412 560 390 575
+          " fill="none" stroke="#28B8B2" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6"/>
+
+          <!-- Mer intérieure / Lagune de Bacalar -->
+          <ellipse cx="220" cy="520" rx="18" ry="55" fill="#28B8B2" opacity="0.7" transform="rotate(-15 220 520)"/>
+
+          <!-- Routes principales -->
+          <path d="M 200 80 Q 320 120 440 200" stroke="#8aaa7a" stroke-width="1.5" fill="none" stroke-dasharray="6 3" opacity="0.5"/>
+          <path d="M 300 100 Q 320 200 340 300 Q 350 380 345 460" stroke="#8aaa7a" stroke-width="1.5" fill="none" stroke-dasharray="6 3" opacity="0.5"/>
+
+          <!-- ══ MARKERS ══ -->
+          <!-- Cancún -->
+          <g class="map-marker" data-dest="Cancún" transform="translate(450,110)">
+            <circle r="14" fill="#0F4C4C" opacity="0.15"/>
+            <circle r="9" fill="#0F4C4C"/>
+            <circle r="4" fill="#28B8B2"/>
+            <circle r="1.5" fill="white"/>
+            <rect x="-28" y="-36" width="56" height="20" rx="4" fill="#0F4C4C"/>
+            <text x="0" y="-22" text-anchor="middle" fill="white" font-size="9" font-family="Inter,sans-serif" font-weight="600">Cancún ✈️</text>
+          </g>
+
+          <!-- Playa del Carmen -->
+          <g class="map-marker" data-dest="Playa del Carmen" transform="translate(430,220)">
+            <circle r="14" fill="#28B8B2" opacity="0.2"/>
+            <circle r="9" fill="#28B8B2"/>
+            <circle r="4" fill="white"/>
+            <circle r="1.5" fill="#0F4C4C"/>
+            <rect x="-38" y="-36" width="76" height="20" rx="4" fill="#28B8B2"/>
+            <text x="0" y="-22" text-anchor="middle" fill="white" font-size="8.5" font-family="Inter,sans-serif" font-weight="600">Playa del Carmen 🏠</text>
+          </g>
+
+          <!-- Tulum -->
+          <g class="map-marker" data-dest="Tulum" transform="translate(420,310)">
+            <circle r="13" fill="#C8A96B" opacity="0.2"/>
+            <circle r="8" fill="#C8A96B"/>
+            <circle r="3" fill="white"/>
+            <rect x="-22" y="-34" width="44" height="18" rx="4" fill="#C8A96B"/>
+            <text x="0" y="-22" text-anchor="middle" fill="white" font-size="9" font-family="Inter,sans-serif" font-weight="600">Tulum 🏛️</text>
+          </g>
+
+          <!-- Chichén Itzá -->
+          <g class="map-marker" data-dest="Chichén Itzá" transform="translate(215,175)">
+            <circle r="15" fill="#C8A96B" opacity="0.2"/>
+            <circle r="10" fill="#C8A96B"/>
+            <circle r="4.5" fill="white"/>
+            <circle r="2" fill="#0F4C4C"/>
+            <rect x="-38" y="-38" width="76" height="20" rx="4" fill="#C8A96B"/>
+            <text x="0" y="-24" text-anchor="middle" fill="white" font-size="8.5" font-family="Inter,sans-serif" font-weight="600">Chichén Itzá ⛩️</text>
+          </g>
+
+          <!-- Cobá -->
+          <g class="map-marker" data-dest="Cobá" transform="translate(320,275)">
+            <circle r="10" fill="#5a8a4a" opacity="0.2"/>
+            <circle r="7" fill="#5a8a4a"/>
+            <circle r="3" fill="white"/>
+            <rect x="-20" y="-30" width="40" height="17" rx="4" fill="#5a8a4a"/>
+            <text x="0" y="-18" text-anchor="middle" fill="white" font-size="8.5" font-family="Inter,sans-serif" font-weight="600">Cobá 🌿</text>
+          </g>
+
+          <!-- Holbox -->
+          <g class="map-marker" data-dest="Holbox" transform="translate(255,60)">
+            <circle r="13" fill="#28B8B2" opacity="0.2"/>
+            <circle r="9" fill="#28B8B2"/>
+            <circle r="4" fill="white"/>
+            <rect x="-26" y="-32" width="52" height="18" rx="4" fill="#28B8B2"/>
+            <text x="0" y="-20" text-anchor="middle" fill="white" font-size="9" font-family="Inter,sans-serif" font-weight="600">Holbox 🦩</text>
+          </g>
+
+          <!-- Cozumel (île) -->
+          <g class="map-marker" data-dest="Cozumel" transform="translate(530,285)">
+            <ellipse rx="28" ry="14" fill="#28B8B2" opacity="0.35"/>
+            <circle r="9" fill="#28B8B2"/>
+            <circle r="4" fill="white"/>
+            <rect x="-29" y="-30" width="58" height="18" rx="4" fill="#28B8B2"/>
+            <text x="0" y="-18" text-anchor="middle" fill="white" font-size="9" font-family="Inter,sans-serif" font-weight="600">Cozumel 🤿</text>
+          </g>
+
+          <!-- Bacalar -->
+          <g class="map-marker" data-dest="Bacalar" transform="translate(225,510)">
+            <circle r="13" fill="#0F4C4C" opacity="0.15"/>
+            <circle r="9" fill="#0F4C4C"/>
+            <circle r="4" fill="#28B8B2"/>
+            <rect x="-26" y="-34" width="52" height="18" rx="4" fill="#0F4C4C"/>
+            <text x="0" y="-21" text-anchor="middle" fill="white" font-size="9" font-family="Inter,sans-serif" font-weight="600">Bacalar 💙</text>
+          </g>
+
+          <!-- Requins Baleines (zone) -->
+          <g class="map-marker" data-dest="Requins Baleines" transform="translate(490,170)">
+            <ellipse rx="32" ry="15" fill="#28B8B2" opacity="0.18"/>
+            <circle r="8" fill="#28B8B2" opacity="0.7"/>
+            <circle r="3.5" fill="white"/>
+            <rect x="-38" y="-32" width="76" height="18" rx="4" fill="#0F4C4C" opacity="0.85"/>
+            <text x="0" y="-20" text-anchor="middle" fill="white" font-size="8" font-family="Inter,sans-serif" font-weight="600">Req. Baleines 🐋</text>
+          </g>
+
+          <!-- Valladolid -->
+          <g transform="translate(250,220)" opacity="0.7">
+            <circle r="6" fill="#8aaa7a"/>
+            <circle r="2.5" fill="white"/>
+            <text x="10" y="4" fill="#4a6a3a" font-size="8.5" font-family="Inter,sans-serif">Valladolid</text>
+          </g>
+
+          <!-- Sian Ka'an -->
+          <g transform="translate(380,380)" opacity="0.7">
+            <circle r="6" fill="#5a8a4a"/>
+            <circle r="2.5" fill="white"/>
+            <text x="-55" y="18" fill="#4a6a3a" font-size="8" font-family="Inter,sans-serif">Sian Ka'an 🦜</text>
+          </g>
+
+          <!-- Légende -->
+          <g transform="translate(14, 540)">
+            <rect width="160" height="72" rx="8" fill="white" opacity="0.9"/>
+            <circle cx="16" cy="16" r="6" fill="#C8A96B"/>
+            <text x="27" y="20" fill="#111" font-size="8.5" font-family="Inter,sans-serif">Excursion phare</text>
+            <circle cx="16" cy="34" r="6" fill="#28B8B2"/>
+            <text x="27" y="38" fill="#111" font-size="8.5" font-family="Inter,sans-serif">Zone côtière / île</text>
+            <circle cx="16" cy="52" r="6" fill="#0F4C4C"/>
+            <text x="27" y="56" fill="#111" font-size="8.5" font-family="Inter,sans-serif">Base Havantures ⭐</text>
+          </g>
+
+          <!-- Boussole décorative -->
+          <g transform="translate(645, 30)">
+            <circle r="22" fill="white" opacity="0.8"/>
+            <text x="0" y="-10" text-anchor="middle" fill="#0F4C4C" font-size="8" font-family="Inter,sans-serif" font-weight="700">N</text>
+            <text x="0" y="16" text-anchor="middle" fill="#888" font-size="7" font-family="Inter,sans-serif">S</text>
+            <text x="-14" y="4" text-anchor="middle" fill="#888" font-size="7" font-family="Inter,sans-serif">O</text>
+            <text x="14" y="4" text-anchor="middle" fill="#888" font-size="7" font-family="Inter,sans-serif">E</text>
+            <line x1="0" y1="-18" x2="0" y2="-8" stroke="#0F4C4C" stroke-width="2" stroke-linecap="round"/>
+            <line x1="0" y1="8" x2="0" y2="18" stroke="#aaa" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="-18" y1="0" x2="-8" y2="0" stroke="#aaa" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="8" y1="0" x2="18" y2="0" stroke="#aaa" stroke-width="1.5" stroke-linecap="round"/>
+          </g>
+
+          <!-- Label mer -->
+          <text x="580" y="450" fill="#28B8B2" font-size="11" font-family="Inter,sans-serif" opacity="0.6" transform="rotate(-90 580 450)">Mer des Caraïbes</text>
+        </svg></div>
+        <!-- Légende interactive -->
+        <div class="map-legend-chips" role="list" aria-label="Destinations sur la carte">
+          <a href="https://wa.me/524491234567?text=Cancún" class="map-chip" role="listitem" target="_blank" rel="noopener noreferrer">✈️ Cancún</a>
+          <a href="https://wa.me/524491234567?text=Chichén+Itzá" class="map-chip map-chip--gold" role="listitem" target="_blank" rel="noopener noreferrer">⛩️ Chichén Itzá</a>
+          <a href="https://wa.me/524491234567?text=Tulum" class="map-chip map-chip--gold" role="listitem" target="_blank" rel="noopener noreferrer">🏛️ Tulum</a>
+          <a href="https://wa.me/524491234567?text=Holbox" class="map-chip" role="listitem" target="_blank" rel="noopener noreferrer">🦩 Holbox</a>
+          <a href="https://wa.me/524491234567?text=Cozumel" class="map-chip" role="listitem" target="_blank" rel="noopener noreferrer">🤿 Cozumel</a>
+          <a href="https://wa.me/524491234567?text=Bacalar" class="map-chip" role="listitem" target="_blank" rel="noopener noreferrer">💙 Bacalar</a>
+          <a href="https://wa.me/524491234567?text=Requins+Baleines" class="map-chip map-chip--whale" role="listitem" target="_blank" rel="noopener noreferrer">🐋 Requins Baleines</a>
+          <a href="https://wa.me/524491234567?text=Sian+Ka%27an" class="map-chip" role="listitem" target="_blank" rel="noopener noreferrer">🦜 Sian Ka'an</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TÉMOIGNAGES -->
+  <section id="temoignages" class="testimonials section" aria-labelledby="temoignages-title">
+    <div class="container">
+      <div class="section-header" data-gsap="fade-up">
+        <span class="section-tag">Ils nous font confiance</span>
+        <h2 id="temoignages-title" class="section-title">Ce que disent <em>nos voyageurs</em></h2>
+      </div>
+      <div class="swiper testimonials-swiper" data-gsap="fade-up" data-delay="0.2" aria-label="Témoignages clients">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <blockquote class="testimonial-card">
+              <div class="testimonial-stars" aria-label="5 étoiles sur 5">
+                <svg width="80" height="14" viewBox="0 0 80 14" fill="#C8A96B" aria-hidden="true"><path d="M7 0l1.8 4H13l-3.4 2.5 1.3 4L7 8 3.1 10.5l1.3-4L1 4h4.2L7 0zM23 0l1.8 4H29l-3.4 2.5 1.3 4L23 8l-3.9 2.5 1.3-4L17 4h4.2L23 0zM39 0l1.8 4H45l-3.4 2.5 1.3 4L39 8l-3.9 2.5 1.3-4L33 4h4.2L39 0zM55 0l1.8 4H61l-3.4 2.5 1.3 4L55 8l-3.9 2.5 1.3-4L49 4h4.2L55 0zM71 0l1.8 4H77l-3.4 2.5 1.3 4L71 8l-3.9 2.5 1.3-4L65 4h4.2L71 0z"/></svg>
+              </div>
+              <p class="testimonial-text">«&nbsp;Une expérience absolument magique à Chichén Itzá. Notre guide était passionné, cultivé, et tellement attentionné. Rien à voir avec les circuits de groupe. On recommande à 200%&nbsp;!&nbsp;»</p>
+              <footer class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">ML</div>
+                <div>
+                  <cite class="author-name">Marie-Laure B.</cite>
+                  <span class="author-from">Paris · Voyage privé Chichén Itzá</span>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="swiper-slide">
+            <blockquote class="testimonial-card">
+              <div class="testimonial-stars" aria-label="5 étoiles sur 5">
+                <svg width="80" height="14" viewBox="0 0 80 14" fill="#C8A96B" aria-hidden="true"><path d="M7 0l1.8 4H13l-3.4 2.5 1.3 4L7 8 3.1 10.5l1.3-4L1 4h4.2L7 0zM23 0l1.8 4H29l-3.4 2.5 1.3 4L23 8l-3.9 2.5 1.3-4L17 4h4.2L23 0zM39 0l1.8 4H45l-3.4 2.5 1.3 4L39 8l-3.9 2.5 1.3-4L33 4h4.2L39 0zM55 0l1.8 4H61l-3.4 2.5 1.3 4L55 8l-3.9 2.5 1.3-4L49 4h4.2L55 0zM71 0l1.8 4H77l-3.4 2.5 1.3 4L71 8l-3.9 2.5 1.3-4L65 4h4.2L71 0z"/></svg>
+              </div>
+              <p class="testimonial-text">«&nbsp;Organisation impeccable, transferts à l'heure, hôtel magnifique, guide adorable. Havantures Caribe a géré tout notre séjour de famille, et nous n'avons eu qu'à profiter. Inestimable.&nbsp;»</p>
+              <footer class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">JC</div>
+                <div>
+                  <cite class="author-name">Jean-Christophe M.</cite>
+                  <span class="author-from">Lyon · Voyage sur mesure famille</span>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="swiper-slide">
+            <blockquote class="testimonial-card">
+              <div class="testimonial-stars" aria-label="5 étoiles sur 5">
+                <svg width="80" height="14" viewBox="0 0 80 14" fill="#C8A96B" aria-hidden="true"><path d="M7 0l1.8 4H13l-3.4 2.5 1.3 4L7 8 3.1 10.5l1.3-4L1 4h4.2L7 0zM23 0l1.8 4H29l-3.4 2.5 1.3 4L23 8l-3.9 2.5 1.3-4L17 4h4.2L23 0zM39 0l1.8 4H45l-3.4 2.5 1.3 4L39 8l-3.9 2.5 1.3-4L33 4h4.2L39 0zM55 0l1.8 4H61l-3.4 2.5 1.3 4L55 8l-3.9 2.5 1.3-4L49 4h4.2L55 0zM71 0l1.8 4H77l-3.4 2.5 1.3 4L71 8l-3.9 2.5 1.3-4L65 4h4.2L71 0z"/></svg>
+              </div>
+              <p class="testimonial-text">«&nbsp;Nager avec les requins baleines était sur ma bucket list depuis des années. Grâce à Havantures, c'est désormais coché. Un moment surréaliste, encadré avec une sécurité irréprochable.&nbsp;»</p>
+              <footer class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">SA</div>
+                <div>
+                  <cite class="author-name">Sophie A.</cite>
+                  <span class="author-from">Montréal · Requins Baleines</span>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="swiper-slide">
+            <blockquote class="testimonial-card">
+              <div class="testimonial-stars" aria-label="5 étoiles sur 5">
+                <svg width="80" height="14" viewBox="0 0 80 14" fill="#C8A96B" aria-hidden="true"><path d="M7 0l1.8 4H13l-3.4 2.5 1.3 4L7 8 3.1 10.5l1.3-4L1 4h4.2L7 0zM23 0l1.8 4H29l-3.4 2.5 1.3 4L23 8l-3.9 2.5 1.3-4L17 4h4.2L23 0zM39 0l1.8 4H45l-3.4 2.5 1.3 4L39 8l-3.9 2.5 1.3-4L33 4h4.2L39 0zM55 0l1.8 4H61l-3.4 2.5 1.3 4L55 8l-3.9 2.5 1.3-4L49 4h4.2L55 0zM71 0l1.8 4H77l-3.4 2.5 1.3 4L71 8l-3.9 2.5 1.3-4L65 4h4.2L71 0z"/></svg>
+              </div>
+              <p class="testimonial-text">«&nbsp;En tant que voyageur exigeant, j'ai été bluffé par le niveau de service. L'attention aux détails, la réactivité, la culture locale de l'équipe — tout était parfait. C'est mon agence pour le Mexique, désormais.&nbsp;»</p>
+              <footer class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">PD</div>
+                <div>
+                  <cite class="author-name">Philippe D.</cite>
+                  <span class="author-from">Bruxelles · Travel Planner Luxe</span>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="swiper-pagination" role="tablist" aria-label="Changer de témoignage"></div>
+        <div class="swiper-button-prev" role="button" aria-label="Témoignage précédent"></div>
+        <div class="swiper-button-next" role="button" aria-label="Témoignage suivant"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS — compact 4-steps strip -->
+  <section id="process" class="process section" aria-labelledby="process-title">
+    <div class="container">
+      <div class="section-header" data-gsap="fade-up">
+        <span class="section-tag">Notre méthode</span>
+        <h2 id="process-title" class="section-title">Simple, <em>de A à Z</em></h2>
+      </div>
+      <div class="process-steps-grid" role="list" data-gsap="fade-up" data-delay="0.1">
+        <div class="process-step-card" role="listitem">
+          <div class="step-animal" aria-hidden="true">
+            <!-- Quetzal bird -->
+            <svg viewBox="0 0 64 64" width="52" height="52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="32" cy="20" rx="10" ry="12" fill="#28B8B2" opacity="0.9"/>
+              <circle cx="32" cy="12" r="7" fill="#1a9490"/>
+              <path d="M28 10 Q32 7 36 10" stroke="#C8A96B" stroke-width="1.5" fill="none"/>
+              <circle cx="30" cy="11" r="1.2" fill="#fff"/>
+              <circle cx="34" cy="11" r="1.2" fill="#fff"/>
+              <circle cx="30.4" cy="11.3" r="0.5" fill="#0F4C4C"/>
+              <circle cx="34.4" cy="11.3" r="0.5" fill="#0F4C4C"/>
+              <path d="M30 14 Q32 15.5 34 14" stroke="#C8A96B" stroke-width="1" fill="none" stroke-linecap="round"/>
+              <path d="M22 18 Q14 12 10 22 Q18 22 22 28" fill="#28B8B2" opacity="0.75"/>
+              <path d="M42 18 Q50 12 54 22 Q46 22 42 28" fill="#28B8B2" opacity="0.75"/>
+              <path d="M26 32 Q32 36 38 32 L36 44 Q32 52 28 44 Z" fill="#C8A96B" opacity="0.8"/>
+              <path d="M32 44 Q30 54 29 60" stroke="#28B8B2" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M32 44 Q34 54 35 60" stroke="#1a9490" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="step-num-badge">01</span>
+          <h3>Contact WhatsApp</h3>
+          <p>Réponse personnalisée en français sous 24h.</p>
+          <span class="step-tag">Gratuit &amp; sans engagement</span>
+        </div>
+        <div class="process-step-card" role="listitem">
+          <div class="step-animal" aria-hidden="true">
+            <!-- Pyramide Maya -->
+            <svg viewBox="0 0 64 64" width="52" height="52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="32,8 56,52 8,52" fill="#C8A96B" opacity="0.85"/>
+              <polygon points="32,8 56,52 8,52" stroke="#0F4C4C" stroke-width="1.5" fill="none"/>
+              <rect x="28" y="38" width="8" height="14" fill="#0F4C4C" opacity="0.5"/>
+              <line x1="18" y1="52" x2="24" y2="28" stroke="#0F4C4C" stroke-width="0.8" opacity="0.4"/>
+              <line x1="46" y1="52" x2="40" y2="28" stroke="#0F4C4C" stroke-width="0.8" opacity="0.4"/>
+              <line x1="13" y1="52" x2="22" y2="36" stroke="#0F4C4C" stroke-width="0.8" opacity="0.25"/>
+              <line x1="51" y1="52" x2="42" y2="36" stroke="#0F4C4C" stroke-width="0.8" opacity="0.25"/>
+              <circle cx="32" cy="8" r="3" fill="#28B8B2"/>
+              <line x1="8" y1="54" x2="56" y2="54" stroke="#0F4C4C" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="step-num-badge">02</span>
+          <h3>Programme Sur-Mesure</h3>
+          <p>Itinéraire, hébergements, excursions — tout adapté à vous.</p>
+          <span class="step-tag">Devis gratuit</span>
+        </div>
+        <div class="process-step-card" role="listitem">
+          <div class="step-animal" aria-hidden="true">
+            <!-- Tortue marine -->
+            <svg viewBox="0 0 64 64" width="52" height="52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="32" cy="34" rx="18" ry="13" fill="#28B8B2" opacity="0.85"/>
+              <ellipse cx="32" cy="34" rx="18" ry="13" stroke="#0F4C4C" stroke-width="1.2" fill="none"/>
+              <path d="M20 28 Q32 20 44 28 Q44 40 32 46 Q20 40 20 28Z" fill="#1a9490" opacity="0.4"/>
+              <line x1="32" y1="22" x2="32" y2="46" stroke="#0F4C4C" stroke-width="0.8" opacity="0.35"/>
+              <line x1="20" y1="34" x2="44" y2="34" stroke="#0F4C4C" stroke-width="0.8" opacity="0.35"/>
+              <line x1="23" y1="26" x2="41" y2="42" stroke="#0F4C4C" stroke-width="0.6" opacity="0.25"/>
+              <line x1="41" y1="26" x2="23" y2="42" stroke="#0F4C4C" stroke-width="0.6" opacity="0.25"/>
+              <ellipse cx="32" cy="22" rx="5" ry="4" fill="#C8A96B"/>
+              <circle cx="30.5" cy="21" r="1" fill="#0F4C4C"/>
+              <circle cx="33.5" cy="21" r="1" fill="#0F4C4C"/>
+              <path d="M14 30 Q8 26 10 34 Q14 38 18 36" fill="#28B8B2" opacity="0.7"/>
+              <path d="M50 30 Q56 26 54 34 Q50 38 46 36" fill="#28B8B2" opacity="0.7"/>
+              <path d="M16 42 Q10 48 14 50 Q18 48 20 44" fill="#28B8B2" opacity="0.6"/>
+              <path d="M48 42 Q54 48 50 50 Q46 48 44 44" fill="#28B8B2" opacity="0.6"/>
+              <path d="M32 46 Q32 54 32 58" stroke="#28B8B2" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="step-num-badge">03</span>
+          <h3>Réservation &amp; Docs</h3>
+          <p>Paiement sécurisé, documents transmis, guide contacté.</p>
+          <span class="step-tag">Confirmé en 24h</span>
+        </div>
+        <div class="process-step-card" role="listitem">
+          <div class="step-animal" aria-hidden="true">
+            <!-- Soleil maya / étoile -->
+            <svg viewBox="0 0 64 64" width="52" height="52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="14" fill="#C8A96B" opacity="0.9"/>
+              <circle cx="32" cy="32" r="9" fill="#dfc08a"/>
+              <circle cx="32" cy="32" r="5" fill="#0F4C4C"/>
+              <g stroke="#C8A96B" stroke-width="2.5" stroke-linecap="round">
+                <line x1="32" y1="8" x2="32" y2="14"/>
+                <line x1="32" y1="50" x2="32" y2="56"/>
+                <line x1="8" y1="32" x2="14" y2="32"/>
+                <line x1="50" y1="32" x2="56" y2="32"/>
+                <line x1="15.5" y1="15.5" x2="19.7" y2="19.7"/>
+                <line x1="44.3" y1="44.3" x2="48.5" y2="48.5"/>
+                <line x1="48.5" y1="15.5" x2="44.3" y2="19.7"/>
+                <line x1="19.7" y1="44.3" x2="15.5" y2="48.5"/>
+              </g>
+            </svg>
+          </div>
+          <span class="step-num-badge">04</span>
+          <h3>Vivez le Mexique</h3>
+          <p>Accueil sur place, assistance 24/7. Votre seule mission : profiter.</p>
+          <span class="step-tag">Accompagnement total</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta-content" data-gsap="fade-up">
+        <h2 id="cta-title" class="cta-title">Prêt à vivre votre <em>Mexique idéal&nbsp;?</em></h2>
+        <p class="cta-desc">Contactez-nous maintenant — devis gratuit, réponse sous 24h, en français.</p>
+        <div class="cta-actions">
+          <a href="https://wa.me/524491234567?text=Bonjour%20Havantures%20Caribe%20!%20Je%20souhaite%20organiser%20mon%20voyage%20sur%20mesure%20au%20Mexique." class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            WhatsApp — Devis Gratuit
+          </a>
+          <a href="mailto:info@havanturescaribe.com" class="btn btn-outline-light">
+            info@havanturescaribe.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="blog section" aria-labelledby="blog-title">
+    <div class="container">
+      <div class="section-header" data-gsap="fade-up">
+        <span class="section-tag">Infos &amp; Actualités</span>
+        <h2 id="blog-title" class="section-title">Le blog <em>Riviera Maya</em></h2>
+        <p class="section-desc">Tout ce que vous devez savoir avant de partir — réglementations, nouveautés, conseils de terrain.</p>
+      </div>
+      <div class="blog-grid" data-gsap="fade-up" data-delay="0.1">
+
+        <article class="blog-card blog-card--featured">
+          <div class="blog-img blog-img--trenmaya" aria-label="Glyphe maya symbolisant le Tren Maya">
+            <svg class="maya-glyph" viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <!-- Cadre extérieur (stèle) -->
+              <rect x="20" y="20" width="160" height="230" rx="10"/>
+
+              <!-- Serpent à plumes (Kukulkán) — tête + plumes -->
+              <path d="M60 42 Q55 30 65 28 Q78 24 90 30"/>
+              <path d="M90 30 Q105 22 120 28 Q135 26 145 35"/>
+              <!-- Plumes au-dessus -->
+              <line x1="128" y1="22" x2="128" y2="14"/>
+              <line x1="135" y1="20" x2="138" y2="12"/>
+              <line x1="142" y1="22" x2="145" y2="14"/>
+              <line x1="148" y1="26" x2="152" y2="18"/>
+
+              <!-- Corps serpent ondulant -->
+              <path d="M40 52 Q60 46 80 54 Q100 62 120 54 Q140 46 160 54"/>
+
+              <!-- Petits triangles décoratifs sous le serpent -->
+              <polygon points="55,62 60,68 50,68"/>
+              <polygon points="80,62 85,68 75,68"/>
+              <polygon points="105,62 110,68 100,68"/>
+              <polygon points="130,62 135,68 125,68"/>
+
+              <!-- Forme centrale en U (palais) -->
+              <path d="M82 95 L82 175 Q82 185 92 185 L108 185 Q118 185 118 175 L118 95"/>
+
+              <!-- Barres verticales gauche -->
+              <line x1="35" y1="95" x2="35" y2="185"/>
+              <line x1="45" y1="95" x2="45" y2="185"/>
+              <line x1="55" y1="95" x2="55" y2="185"/>
+              <line x1="65" y1="95" x2="65" y2="185"/>
+
+              <!-- Barres verticales droite -->
+              <line x1="135" y1="95" x2="135" y2="185"/>
+              <line x1="145" y1="95" x2="145" y2="185"/>
+              <line x1="155" y1="95" x2="155" y2="185"/>
+              <line x1="165" y1="95" x2="165" y2="185"/>
+
+              <!-- Bande supérieure entre serpent et palais -->
+              <line x1="35" y1="78" x2="65" y2="78"/>
+              <line x1="135" y1="78" x2="165" y2="78"/>
+
+              <!-- Bande sous le palais -->
+              <line x1="82" y1="195" x2="118" y2="195"/>
+
+              <!-- Diamants décoratifs en bas -->
+              <polygon points="50,210 56,216 50,222 44,216"/>
+              <polygon points="72,210 78,216 72,222 66,216"/>
+              <polygon points="100,210 106,216 100,222 94,216"/>
+              <polygon points="128,210 134,216 128,222 122,216"/>
+              <polygon points="150,210 156,216 150,222 144,216"/>
+
+              <!-- Coins inférieurs (style escalier) -->
+              <polyline points="32,238 32,228 42,228 42,238"/>
+              <polyline points="168,238 168,228 158,228 158,238"/>
+            </svg>
+            <!-- Trait teal sous le glyphe -->
+            <div class="maya-glyph-line" aria-hidden="true"></div>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-tag blog-tag--new">Nouveau</span>
+              <time datetime="2025-01-15" class="blog-date">Janvier 2025</time>
+            </div>
+            <h3 class="blog-title-card">Train Maya (Tren Maya) : ce qui change pour vos excursions</h3>
+            <p class="blog-excerpt">Le Tren Maya relie désormais Cancún à Palenque via Tulum. Découvrez comment intégrer ce train dans votre séjour, les gares clés, et ce que ça change pour rejoindre Chichén Itzá ou Bacalar depuis Playa del Carmen.</p>
+            <div class="blog-highlights">
+              <div class="blog-hl">🚆 <strong>5 gares</strong> sur la Riviera Maya</div>
+              <div class="blog-hl">⏱️ <strong>45 min</strong> Playa→Tulum en train</div>
+              <div class="blog-hl">💵 À partir de <strong>120 MXN</strong> (classe touriste)</div>
+            </div>
+            <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20voudrais%20des%20infos%20sur%20le%20Train%20Maya" class="blog-cta" target="_blank" rel="noopener noreferrer">
+              Organiser mon séjour avec le Tren Maya →
+            </a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-img blog-img--tulum-ruins"></div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-tag">Tulum</span>
+              <time datetime="2025-02-01" class="blog-date">Février 2025</time>
+            </div>
+            <h3 class="blog-title-card">Tulum 2025 : nouvelles règles, tarifs et conseils</h3>
+            <p class="blog-excerpt">Les ruines de Tulum ont instauré de nouvelles limitations de capacité. Horaires d'ouverture modifiés, billets en ligne obligatoires et zones remodelées — voici ce qu'il faut savoir pour profiter sans mauvaises surprises.</p>
+            <div class="blog-highlights">
+              <div class="blog-hl">🕖 Ouverture à <strong>8h00</strong> (fermeture 17h)</div>
+              <div class="blog-hl">🎟️ Billet en ligne <strong>recommandé</strong></div>
+              <div class="blog-hl">⚠️ Flux limité à <strong>3 000 visiteurs/jour</strong></div>
+            </div>
+            <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20voudrais%20visiter%20Tulum%20en%202025" class="blog-cta" target="_blank" rel="noopener noreferrer">
+              Réserver mon excursion Tulum →
+            </a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-img blog-img--chichen-blog"></div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-tag">Chichén Itzá</span>
+              <time datetime="2025-01-20" class="blog-date">Janvier 2025</time>
+            </div>
+            <h3 class="blog-title-card">Chichén Itzá : accès, restrictions &amp; astuces 2025</h3>
+            <p class="blog-excerpt">L'escalade de la pyramide est interdite depuis 2006, mais beaucoup l'ignorent encore. Nouveaux tarifs d'entrée, heures à éviter absolument, et pourquoi partir avec Havantures fait toute la différence.</p>
+            <div class="blog-highlights">
+              <div class="blog-hl">🌅 Partir à <strong>7h max</strong> pour éviter la foule</div>
+              <div class="blog-hl">🎟️ Entrée : <strong>531 MXN</strong> + INAH</div>
+              <div class="blog-hl">🚫 Escalade du Castillo <strong>interdite</strong></div>
+            </div>
+            <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20voudrais%20visiter%20Chich%C3%A9n%20Itz%C3%A1" class="blog-cta" target="_blank" rel="noopener noreferrer">
+              Réserver mon excursion privée →
+            </a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-img blog-img--taxes"></div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-tag blog-tag--alert">Important</span>
+              <time datetime="2025-01-01" class="blog-date">2025</time>
+            </div>
+            <h3 class="blog-title-card">Taxe touristique Mexique 2025 : ce qu'il faut savoir</h3>
+            <p class="blog-excerpt">L'état de Quintana Roo applique une taxe de séjour de 221 MXN par personne et par nuit. Plusieurs municipalités ont également instauré des droits d'accès aux plages et réserves naturelles. Tout ce que vous devez prévoir dans votre budget.</p>
+            <div class="blog-highlights">
+              <div class="blog-hl">🏨 <strong>221 MXN/nuit</strong> (taxe de séjour QRoo)</div>
+              <div class="blog-hl">🌊 Accès plage : <strong>variable par zone</strong></div>
+              <div class="blog-hl">📋 Taxe aéroport : <strong>incluse dans les billets</strong></div>
+            </div>
+            <a href="https://wa.me/524491234567?text=Bonjour%2C%20pouvez-vous%20m%27informer%20sur%20les%20taxes%20touristiques" class="blog-cta" target="_blank" rel="noopener noreferrer">
+              Obtenir un budget précis →
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq section" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section-header" data-gsap="fade-up">
+        <span class="section-tag">Questions fréquentes</span>
+        <h2 id="faq-title" class="section-title">Tout ce que vous <em>voulez savoir</em></h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-list" role="list" data-gsap="fade-up">
+          <details class="faq-item" role="listitem">
+            <summary class="faq-question">Qu'est-ce qu'une excursion privée Riviera Maya avec Havantures Caribe ?</summary>
+            <div class="faq-answer">
+              <p>Une excursion privée Riviera Maya, c'est un circuit exclusif conçu uniquement pour votre groupe — sans partager votre guide ni votre véhicule avec d'autres voyageurs. Vous choisissez le rythme, les arrêts, et bénéficiez d'un accompagnement 100% en français. Parfait pour les familles, les couples et les groupes d'amis qui refusent les compromis.</p>
+            </div>
+          </details>
+          <details class="faq-item" role="listitem">
+            <summary class="faq-question">Êtes-vous vraiment francophones ? Vos guides parlent-ils français ?</summary>
+            <div class="faq-answer">
+              <p>Oui, absolument. Havantures Caribe est une agence francophone Playa del Carmen, fondée et gérée par des passionnés francophones. Tous nos guides parlent français couramment — c'est notre différence essentielle. Vous communiquez dans votre langue, de la réservation jusqu'au retour à l'hôtel.</p>
+            </div>
+          </details>
+          <details class="faq-item" role="listitem">
+            <summary class="faq-question">Comment se passe un voyage sur mesure Mexique avec votre agence ?</summary>
+            <div class="faq-answer">
+              <p>Tout commence par un échange WhatsApp ou email. Nous cernons vos envies, votre budget et vos dates. Nous créons ensuite un programme unique : excursions privées, hôtels sélectionnés, restaurants confidentiels, transferts coordonnés. Vous validez, on ajuste, et on s'occupe de tout — de la réservation jusqu'à votre retour.</p>
+            </div>
+          </details>
+          <details class="faq-item" role="listitem">
+            <summary class="faq-question">Quelles excursions proposez-vous depuis Playa del Carmen et Cancún ?</summary>
+            <div class="faq-answer">
+              <p>Depuis Playa del Carmen et Cancún, nous proposons des excursions privées vers Chichén Itzá, Tulum &amp; Cobá, Ek Balam, Bacalar, Holbox, Cozumel, Isla Contoy &amp; Isla Mujeres, la réserve de Sian Ka'an, et les cenotes. En saison (juin–sept), nous organisons également des sorties avec les requins baleines. Chaque excursion est disponible en groupe ou en formule 100% privée avec guide francophone.</p>
+            </div>
+          </details>
+          <details class="faq-item" role="listitem">
+            <summary class="faq-question">Les prix s'entendent-ils par personne ou par groupe ?</summary>
+            <div class="faq-answer">
+              <p>Nos tarifs varient selon la destination, le nombre de participants, la saison et la formule choisie (groupe ou privée). Plus vous êtes nombreux, plus le coût par personne est avantageux. Contactez-nous pour un devis personnalisé et sans engagement — réponse sous 24h.</p>
+            </div>
+          </details>
+          <details class="faq-item" role="listitem">
+            <summary class="faq-question">Gérez-vous aussi les transferts depuis l'aéroport de Cancún ?</summary>
+            <div class="faq-answer">
+              <p>Oui. Nous proposons des transferts privés depuis l'aéroport de Cancún vers Playa del Carmen et toute la Riviera Maya, ainsi que le service retour. Accueil personnalisé dès la sortie des douanes, véhicule climatisé et chauffeur francophone disponible. Les tarifs varient selon le nombre de personnes et la saison.</p>
+            </div>
+          </details>
+          <details class="faq-item" role="listitem">
+            <summary class="faq-question">Quelle est la meilleure période pour un séjour luxe Mexique ?</summary>
+            <div class="faq-answer">
+              <p>La Riviera Maya est magnifique toute l'année. La haute saison (décembre–avril) offre un temps sec et idéal pour les visites de sites. La saison verte (mai–novembre) est plus humide mais permet de vivre des expériences uniques comme les requins baleines (juin–septembre) et de profiter de tarifs préférentiels. Notre équipe vous conseille selon votre profil et vos envies.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#" class="footer-logo" aria-label="Havantures Caribe">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="18" cy="18" r="16.5" stroke="#28B8B2" stroke-width="1"/>
+                <path d="M18 4C18 4 25 11 25 18 C25 25 18 32 18 32 C18 32 11 25 11 18 C11 11 18 4 18 4Z" fill="#28B8B2" opacity="0.2"/>
+                <circle cx="18" cy="18" r="3.5" fill="#C8A96B"/>
+              </svg>
+              <span>Havantures<em>Caribe</em></span>
+            </a>
+            <p class="footer-tagline">Votre agence francophone de référence<br/>pour la Riviera Maya.</p>
+            <address class="footer-contact">
+              <p>Playa del Carmen, Quintana Roo, Mexique</p>
+              <a href="mailto:info@havanturescaribe.com">info@havanturescaribe.com</a>
+              <a href="https://www.havanturescaribe.com" target="_blank" rel="noopener noreferrer">www.havanturescaribe.com</a>
+            </address>
+          </div>
+          <nav class="footer-nav" aria-label="Navigation pied de page">
+            <h3 class="footer-nav-title">Excursions</h3>
+            <ul role="list">
+              <li><a href="https://wa.me/524491234567">Chichén Itzá Privée</a></li>
+              <li><a href="https://wa.me/524491234567">Tulum &amp; Cobá</a></li>
+              <li><a href="https://wa.me/524491234567">Holbox</a></li>
+              <li><a href="https://wa.me/524491234567">Bacalar</a></li>
+              <li><a href="https://wa.me/524491234567">Cozumel</a></li>
+              <li><a href="https://wa.me/524491234567">Requins Baleines</a></li>
+              <li><a href="https://wa.me/524491234567">Sian Ka'an</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-nav" aria-label="Services">
+            <h3 class="footer-nav-title">Services</h3>
+            <ul role="list">
+              <li><a href="#services">Excursions Privées</a></li>
+              <li><a href="#services">Travel Planner Luxe</a></li>
+              <li><a href="#services">Transferts Aéroport</a></li>
+              <li><a href="#services">Voyages Sur Mesure</a></li>
+              <li><a href="#services">Coordination Groupe</a></li>
+            </ul>
+          </nav>
+          <div class="footer-cta-block">
+            <h3 class="footer-nav-title">Nous Contacter</h3>
+            <p>Devis gratuit, réponse sous 24h en français.</p>
+            <a href="https://wa.me/524491234567?text=Bonjour%20Havantures%20Caribe%20!" class="footer-wa-btn" target="_blank" rel="noopener noreferrer" aria-label="Contacter sur WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              WhatsApp
+            </a>
+            <div class="footer-socials" aria-label="Réseaux sociaux">
+              <p class="footer-socials-label">Suivez-nous</p>
+              <div class="footer-socials-row">
+                <a href="https://instagram.com/havanturescaribe" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram Havantures Caribe">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.336 3.608 1.311.975.975 1.249 2.242 1.311 3.608.058 1.266.069 1.646.069 4.85s-.012 3.584-.07 4.85c-.062 1.366-.336 2.633-1.311 3.608-.975.975-2.242 1.249-3.608 1.311-1.266.058-1.646.069-4.85.069s-3.584-.012-4.85-.07c-1.366-.062-2.633-.336-3.608-1.311-.975-.975-1.249-2.242-1.311-3.608-.058-1.266-.069-1.646-.069-4.85s.012-3.584.07-4.85c.062-1.366.336-2.633 1.311-3.608.975-.975 2.242-1.249 3.608-1.311 1.266-.058 1.646-.07 4.85-.07M12 0C8.741 0 8.332.014 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.014 8.332 0 8.741 0 12s.014 3.668.072 4.948c.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942 1.28.058 1.689.072 4.948.072s3.668-.014 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038.058-1.28.072-1.689.072-4.948s-.014-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.014 15.259 0 12 0z"/>
+                    <path d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8z"/>
+                    <circle cx="18.406" cy="5.594" r="1.44"/>
+                  </svg>
+                </a>
+                <a href="https://facebook.com/havanturescaribe" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook Havantures Caribe">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </a>
+                <a href="mailto:info@havanturescaribe.com" class="footer-social-btn" aria-label="Email Havantures Caribe">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    <polyline points="2,7 12,14 22,7"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 Havantures Caribe · Agence francophone Riviera Maya · Tous droits réservés</p>
+        <p class="footer-legal">Excursions privées · Playa del Carmen · Cancún · Tulum · Mexique</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/524491234567?text=Bonjour%20Havantures%20Caribe%20!%20Je%20souhaite%20un%20devis." class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Contacter Havantures Caribe sur WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <span class="wa-tooltip">Devis gratuit</span>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="script.js"></script>
+  <script>
+  (function initLeafletMap() {
+    const el = document.getElementById('leaflet-riviera');
+    if (!el || typeof L === 'undefined') return;
+
+    const map = L.map('leaflet-riviera', { zoomControl: true, scrollWheelZoom: false })
+                 .setView([20.5, -87.3], 8);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© <a href="https://openstreetmap.org">OpenStreetMap</a>',
+      maxZoom: 15
+    }).addTo(map);
+
+    const teal = '#0F4C4C', gold = '#C8A96B', tealL = '#28B8B2';
+
+    function mkIcon(color, emoji) {
+      return L.divIcon({
+        className: '',
+        html: `<div style="
+          background:${color};color:white;
+          border:2.5px solid white;
+          border-radius:50% 50% 50% 0;
+          transform:rotate(-45deg);
+          width:36px;height:36px;
+          display:flex;align-items:center;justify-content:center;
+          box-shadow:0 4px 12px rgba(0,0,0,0.3);
+          font-size:16px;
+        "><span style="transform:rotate(45deg)">${emoji}</span></div>`,
+        iconSize: [36, 36],
+        iconAnchor: [18, 36],
+        popupAnchor: [0, -40]
+      });
+    }
+
+    const spots = [
+      { ll:[21.161, -86.851], n:'Cancún',          e:'✈️', c:teal,  t:'Hub aérien principal. Vols directs depuis la France & Canada.' },
+      { ll:[20.630, -87.079], n:'Playa del Carmen', e:'🏠', c:tealL, t:'Notre base. Agence Havantures Caribe — excursions &amp; voyages sur mesure.' },
+      { ll:[20.210, -87.465], n:'Tulum',            e:'🏛️', c:gold,  t:'Ruines mayas en bord de mer. Cenotes, plages &amp; jungle.' },
+      { ll:[20.681, -88.569], n:'Chichén Itzá',     e:'⛩️', c:gold,  t:'Site maya classé UNESCO. Départ 7h pour éviter la foule.' },
+      { ll:[20.491, -87.722], n:'Cobá',             e:'🌿', c:'#5a8a4a', t:'Pyramide Nohoch Mul au cœur de la jungle. Forêt dense.' },
+      { ll:[21.527, -87.362], n:'Holbox',           e:'🦩', c:tealL, t:'Île sans voiture. Flamants roses, plancton bioluminescent.' },
+      { ll:[18.668, -88.400], n:'Bacalar',          e:'💙', c:teal,  t:'Lagune aux 7 couleurs. Eau turquoise d\'une pureté exceptionnelle.' },
+      { ll:[20.421, -86.922], n:'Cozumel',          e:'🤿', c:tealL, t:'2e récif corallien mondial. Snorkeling &amp; plongée premium.' },
+      { ll:[21.490, -87.022], n:'Isla Contoy',      e:'🦜', c:'#8a5a3a', t:'Réserve ornithologique protégée. Frégate, fou masqué &amp; tortues.' },
+      { ll:[20.660, -87.200], n:'Requins Baleines', e:'🐋', c:'#1a5577', t:'Nager avec les géants des mers — saison juin–septembre.' },
+      { ll:[20.097, -87.617], n:"Sian Ka'an",       e:'🌴', c:'#5a8a4a', t:"Réserve de biosphère UNESCO. Mangroves, lacs &amp; faune sauvage." },
+    ];
+
+    spots.forEach(s => {
+      const wa = `https://wa.me/524491234567?text=Bonjour%2C%20je%20voudrais%20visiter%20${encodeURIComponent(s.n)}`;
+      L.marker(s.ll, { icon: mkIcon(s.c, s.e) })
+       .addTo(map)
+       .bindPopup(`<div style="font-family:Inter,sans-serif;min-width:160px;">
+          <strong style="font-size:14px;color:#0F4C4C">${s.e} ${s.n}</strong>
+          <p style="font-size:12px;color:#555;margin:6px 0 10px">${s.t}</p>
+          <a href="${wa}" target="_blank" style="
+            display:block;text-align:center;background:#0F4C4C;color:white;
+            padding:7px 12px;border-radius:20px;font-size:11px;font-weight:600;
+            text-decoration:none;">Demander un devis →</a>
+        </div>`, { maxWidth: 220 });
+    });
+  })();
+  </script>
+</body>
+</html>
