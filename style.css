@@ -861,8 +861,8 @@ body.gsap-failed [data-gsap="fade-right"] {
 .dest-img--cenotes {
   background-image:
     linear-gradient(to top, rgba(6,16,16,0.3) 0%, transparent 50%),
-    url('img/cenote-2.avif');
-  background-size: cover; background-position: center 20%;
+    url('img/tortue-raie.jpg');
+  background-size: cover; background-position: center 35%;
 }
 .dest-img--sian-kaan {
   background-image:
@@ -1727,6 +1727,13 @@ details[open] .faq-question { color: var(--teal-dark); }
 }
 .blog-img--chichen-blog {
   background-image: url('https://images.unsplash.com/photo-1518638150340-f706e86654de?auto=format&fit=crop&w=700&q=80');
+}
+.blog-img--sargasses {
+  background-image:
+    linear-gradient(to bottom, rgba(5,30,30,0.15) 0%, rgba(5,30,30,0.4) 100%),
+    url('img/bacalar-lagoon.jpg');
+  background-size: cover;
+  background-position: center 40%;
 }
 .blog-img--taxes {
   background-image: linear-gradient(135deg, var(--teal-dark) 0%, #1a5555 100%);
