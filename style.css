@@ -220,6 +220,16 @@ body.gsap-failed [data-gsap="fade-right"] {
   box-shadow: 0 12px 40px rgba(40,184,178,0.4);
   transform: translateY(-2px);
 }
+.btn-secondary {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.5);
+}
+.btn-secondary:hover, .btn-secondary:focus-visible {
+  background: rgba(255,255,255,0.1);
+  border-color: var(--white);
+  transform: translateY(-1px);
+}
 .btn-ghost {
   background: var(--white-08);
   color: var(--white);
