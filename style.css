@@ -858,6 +858,19 @@ body.gsap-failed [data-gsap="fade-right"] {
   background-size: cover; background-position: center top;
 }
 
+.dest-img--cenotes {
+  background-image:
+    linear-gradient(to top, rgba(6,16,16,0.3) 0%, transparent 50%),
+    url('img/cenote-2.avif');
+  background-size: cover; background-position: center 20%;
+}
+.dest-img--sian-kaan {
+  background-image:
+    linear-gradient(to top, rgba(6,16,16,0.3) 0%, transparent 50%),
+    url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=800&q=80');
+  background-size: cover; background-position: center 60%;
+}
+
 .dest-card::after {
   content: '';
   position: absolute; inset: 0;
