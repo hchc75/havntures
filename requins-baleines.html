@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nage avec les requins-baleines depuis Playa del Carmen | Excursion premium</title>
+  <meta name="description" content="Vivez une expérience unique en nageant avec les requins-baleines depuis Playa del Carmen. Excursion premium disponible de juin à septembre en Riviera Maya."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://hchc75.github.io/havntures/requins-baleines.html"/>
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Nage avec les requins-baleines depuis Playa del Carmen | Excursion premium"/>
+  <meta property="og:description" content="Nager avec les plus grands poissons du monde dans les Caraïbes mexicaines. Excursion exclusive de juin à septembre."/>
+  <meta property="og:image" content="https://hchc75.github.io/havntures/img/whale-shark.avif"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{--cream:#F7F1E8;--cream-dark:#EDE6D8;--teal:#28B8B2;--teal-mid:#1a9490;--teal-dark:#0F4C4C;--teal-deeper:#0a3232;--gold:#C8A96B;--gold-light:#dfc08a;--ink:#111111;--white:#ffffff;--white-80:rgba(255,255,255,0.8);--white-20:rgba(255,255,255,0.2);--font-display:'Playfair Display',Georgia,serif;--font-body:'Inter',system-ui,sans-serif;--radius-sm:8px;--radius-md:16px;--radius-lg:28px;--radius-full:9999px;--container:860px}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;font-size:16px}
+    body{font-family:var(--font-body);color:var(--ink);background:var(--cream);overflow-x:hidden;line-height:1.7;-webkit-font-smoothing:antialiased}
+    a{text-decoration:none;color:inherit}ul{list-style:none}img{max-width:100%;display:block}
+
+    #scroll-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--teal),var(--gold));z-index:10000;transition:width .1s linear}
+
+    .nav{position:fixed;top:0;left:0;right:0;z-index:999;padding:0 clamp(20px,5vw,60px);height:68px;display:flex;align-items:center;justify-content:space-between;background:rgba(10,50,50,0.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,0.08)}
+    .nav-brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-size:1.25rem;color:var(--white);letter-spacing:-0.01em}
+    .nav-brand-logo{width:36px;height:36px;background:var(--teal-dark);border:1.5px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem}
+    .nav-brand span{color:var(--gold);font-style:italic}
+    .nav-back{display:flex;align-items:center;gap:8px;color:var(--white-80);font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500;transition:color .2s}
+    .nav-back:hover{color:var(--gold)}.nav-back svg{width:16px;height:16px}
+    .nav-cta{display:inline-flex;align-items:center;gap:8px;background:var(--teal);color:var(--white);font-size:0.8rem;font-weight:600;letter-spacing:0.04em;padding:9px 20px;border-radius:var(--radius-full);transition:background .2s,transform .2s}
+    .nav-cta:hover{background:var(--teal-mid);transform:translateY(-1px)}
+
+    /* Season badge */
+    .season-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,169,107,0.15);border:1px solid rgba(200,169,107,0.5);color:var(--gold-light);font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:7px 18px;border-radius:var(--radius-full);margin-bottom:28px}
+    .season-badge::before{content:'🗓';font-size:0.9rem}
+
+    .hero{position:relative;height:92vh;min-height:560px;display:flex;align-items:flex-end;overflow:hidden}
+    .hero-bg{position:absolute;inset:0;background-image:linear-gradient(to bottom,rgba(5,20,30,0.05) 0%,rgba(5,20,30,0.04) 35%,rgba(5,20,30,0.88) 100%),url('img/whale-shark.avif');background-size:cover;background-position:center 30%;transform:scale(1.04);animation:heroZoom 16s ease-out forwards}
+    @keyframes heroZoom{from{transform:scale(1.04)}to{transform:scale(1.00)}}
+    .hero-frame{position:absolute;inset:16px;border:1.5px solid rgba(255,255,255,0.35);border-radius:12px;pointer-events:none;z-index:2}
+    .hero-content{position:relative;z-index:3;padding:clamp(40px,6vw,80px) clamp(24px,6vw,80px);max-width:800px;animation:heroFade 1s ease both}
+    @keyframes heroFade{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+    .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.3);backdrop-filter:blur(8px);color:var(--white-80);font-size:0.65rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;padding:6px 16px;border-radius:var(--radius-full);margin-bottom:24px}
+    .hero-eyebrow::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%}
+    .hero-title{font-family:var(--font-display);font-size:clamp(2rem,5vw,3.4rem);font-weight:700;color:var(--white);line-height:1.12;margin-bottom:20px;letter-spacing:-0.02em}
+    .hero-title em{color:var(--gold);font-style:italic}
+    .hero-sub{font-size:clamp(0.9rem,1.5vw,1.05rem);color:rgba(255,255,255,0.78);max-width:560px;margin-bottom:36px;line-height:1.65}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn-primary-hero{display:inline-flex;align-items:center;gap:10px;background:var(--teal);color:var(--white);font-size:0.9rem;font-weight:600;padding:14px 28px;border-radius:var(--radius-full);transition:background .2s,transform .2s,box-shadow .2s;box-shadow:0 4px 20px rgba(40,184,178,0.4)}
+    .btn-primary-hero:hover{background:var(--teal-mid);transform:translateY(-2px);box-shadow:0 8px 28px rgba(40,184,178,0.5)}
+    .btn-outline-hero{display:inline-flex;align-items:center;gap:10px;border:1.5px solid rgba(255,255,255,0.5);color:var(--white);font-size:0.9rem;font-weight:500;padding:14px 28px;border-radius:var(--radius-full);backdrop-filter:blur(8px);background:rgba(255,255,255,0.06);transition:background .2s,border-color .2s}
+    .btn-outline-hero:hover{background:rgba(255,255,255,0.14);border-color:rgba(255,255,255,0.7)}
+
+    .breadcrumb{background:var(--teal-dark);padding:14px clamp(24px,6vw,80px);display:flex;align-items:center;gap:8px;font-size:0.75rem;color:rgba(255,255,255,0.6);letter-spacing:0.04em}
+    .breadcrumb a{color:var(--teal);transition:color .2s}.breadcrumb a:hover{color:var(--gold)}.breadcrumb-sep{opacity:0.4}
+
+    .article-wrap{max-width:var(--container);margin:0 auto;padding:clamp(60px,8vw,100px) clamp(24px,5vw,40px)}
+    .article-intro{margin-bottom:72px}
+    .article-h1{font-family:var(--font-display);font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:700;color:var(--teal-dark);line-height:1.2;margin-bottom:28px;letter-spacing:-0.02em}
+    .article-h1::after{content:'';display:block;width:60px;height:3px;background:var(--gold);border-radius:2px;margin-top:18px}
+    .article-lead{font-size:1.08rem;line-height:1.8;color:#333;margin-bottom:20px}
+    .article-section{margin-bottom:72px;padding-top:12px;border-top:1px solid rgba(15,76,76,0.12)}
+    .article-h2{font-family:var(--font-display);font-size:clamp(1.3rem,2.5vw,1.75rem);font-weight:700;color:var(--teal-dark);line-height:1.25;margin-bottom:22px;letter-spacing:-0.01em}
+    .article-h2 em{color:var(--teal);font-style:italic}
+    .article-p{font-size:1rem;line-height:1.8;color:#2a2a2a;margin-bottom:18px}
+    .article-p:last-child{margin-bottom:0}
+    .article-photo{border-radius:var(--radius-md);overflow:hidden;margin:40px 0;aspect-ratio:16/7;background:var(--teal-dark)}
+    .article-photo img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+    .article-photo:hover img{transform:scale(1.03)}
+    .article-list{margin:20px 0;display:flex;flex-direction:column;gap:10px}
+    .article-list li{display:flex;align-items:flex-start;gap:12px;font-size:0.98rem;color:#2a2a2a;line-height:1.6}
+    .article-list li::before{content:'';flex-shrink:0;width:7px;height:7px;background:var(--teal);border-radius:50%;margin-top:8px}
+
+    /* Season info block */
+    .season-block{background:linear-gradient(135deg,rgba(200,169,107,0.12) 0%,rgba(200,169,107,0.06) 100%);border:1px solid rgba(200,169,107,0.3);border-radius:var(--radius-md);padding:28px 32px;margin:40px 0;display:flex;align-items:flex-start;gap:20px}
+    .season-icon{font-size:2rem;flex-shrink:0;margin-top:2px}
+    .season-text-wrap{}
+    .season-label{font-size:0.65rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+    .season-text{font-size:0.95rem;color:#3a3220;line-height:1.65}
+    .season-text strong{color:var(--teal-dark)}
+
+    .why-block{background:var(--teal-dark);border-radius:var(--radius-lg);padding:clamp(36px,5vw,56px);margin-bottom:72px;position:relative;overflow:hidden}
+    .why-block::before{content:'';position:absolute;top:-80px;right:-80px;width:300px;height:300px;background:radial-gradient(circle,rgba(40,184,178,0.18) 0%,transparent 70%);pointer-events:none}
+    .why-block::after{content:'';position:absolute;bottom:-60px;left:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(200,169,107,0.14) 0%,transparent 70%);pointer-events:none}
+    .why-tag{display:inline-block;font-size:0.62rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--teal);border:1px solid rgba(40,184,178,0.35);padding:5px 14px;border-radius:var(--radius-full);margin-bottom:20px}
+    .why-title{font-family:var(--font-display);font-size:clamp(1.4rem,2.8vw,1.9rem);font-weight:700;color:var(--white);line-height:1.2;margin-bottom:32px}
+    .why-title em{color:var(--gold);font-style:italic}
+    .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;position:relative;z-index:1}
+    .why-item{display:flex;align-items:flex-start;gap:14px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius-sm);padding:18px 20px;transition:background .2s,border-color .2s}
+    .why-item:hover{background:rgba(255,255,255,0.1);border-color:rgba(40,184,178,0.4)}
+    .why-icon{flex-shrink:0;width:34px;height:34px;background:rgba(40,184,178,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center}
+    .why-icon svg{width:17px;height:17px;color:var(--teal)}
+    .why-text{font-size:0.88rem;color:rgba(255,255,255,0.82);line-height:1.5}
+
+    .cta-strip{background:linear-gradient(135deg,var(--teal-dark) 0%,#1a6060 100%);border-radius:var(--radius-lg);padding:clamp(40px,5vw,60px);text-align:center;margin-bottom:80px;position:relative;overflow:hidden}
+    .cta-strip::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+    .cta-strip-label{font-size:0.68rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--teal);margin-bottom:14px;display:block}
+    .cta-strip-title{font-family:var(--font-display);font-size:clamp(1.5rem,3vw,2.1rem);font-weight:700;color:var(--white);margin-bottom:12px;line-height:1.2}
+    .cta-strip-title em{color:var(--gold);font-style:italic}
+    .cta-strip-sub{color:rgba(255,255,255,0.65);font-size:0.95rem;margin-bottom:32px}
+    .cta-strip-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .btn-wa{display:inline-flex;align-items:center;gap:10px;background:#25D366;color:var(--white);font-size:0.92rem;font-weight:700;padding:16px 32px;border-radius:var(--radius-full);transition:background .2s,transform .2s,box-shadow .2s;box-shadow:0 4px 20px rgba(37,211,102,0.35)}
+    .btn-wa:hover{background:#1fb954;transform:translateY(-2px);box-shadow:0 8px 30px rgba(37,211,102,0.45)}
+    .btn-wa svg{width:20px;height:20px}
+    .btn-email{display:inline-flex;align-items:center;gap:10px;border:1.5px solid rgba(255,255,255,0.4);color:var(--white);font-size:0.88rem;font-weight:500;padding:16px 28px;border-radius:var(--radius-full);background:rgba(255,255,255,0.07);backdrop-filter:blur(8px);transition:background .2s,border-color .2s}
+    .btn-email:hover{background:rgba(255,255,255,0.13);border-color:rgba(255,255,255,0.7)}
+
+    .sticky-cta{position:fixed;bottom:28px;right:28px;z-index:998;display:flex;align-items:center;gap:10px;background:#25D366;color:var(--white);font-size:0.85rem;font-weight:600;padding:13px 22px;border-radius:var(--radius-full);box-shadow:0 6px 24px rgba(37,211,102,0.45);transition:transform .2s,box-shadow .2s;text-decoration:none}
+    .sticky-cta:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 10px 32px rgba(37,211,102,0.55)}
+    .sticky-cta svg{width:18px;height:18px}
+
+    .footer{background:var(--teal-deeper);color:rgba(255,255,255,0.6);padding:48px clamp(24px,6vw,80px) 32px;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center}
+    .footer-brand{font-family:var(--font-display);font-size:1.3rem;color:var(--white)}
+    .footer-brand span{color:var(--gold);font-style:italic}
+    .footer-links{display:flex;flex-wrap:wrap;gap:24px;justify-content:center}
+    .footer-links a{font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;color:rgba(255,255,255,0.5);transition:color .2s}
+    .footer-links a:hover{color:var(--gold)}
+    .footer-copy{font-size:0.75rem;color:rgba(255,255,255,0.3)}
+
+    @media(max-width:600px){
+      .nav-back span{display:none}.hero-actions{flex-direction:column}
+      .btn-primary-hero,.btn-outline-hero{justify-content:center}
+      .why-grid{grid-template-columns:1fr}.cta-strip-actions{flex-direction:column;align-items:center}
+      .sticky-cta span{display:none}.sticky-cta{padding:14px;border-radius:50%}
+      .season-block{flex-direction:column;gap:12px}
+    }
+  </style>
+</head>
+<body>
+
+  <div id="scroll-progress"></div>
+
+  <nav class="nav" aria-label="Navigation principale">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-brand-logo">🌿</div>
+      Havantures<span>Caribe</span>
+    </a>
+    <a href="index.html" class="nav-back" aria-label="Retour à l'accueil">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 3L5 8l5 5"/></svg>
+      <span>Retour</span>
+    </a>
+    <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20souhaite%20nager%20avec%20les%20requins-baleines"
+       class="nav-cta" target="_blank" rel="noopener noreferrer">Devis gratuit</a>
+  </nav>
+
+  <header class="hero" aria-label="Requins-baleines Riviera Maya">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-frame" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Expérience rare · Juin — Septembre</div>
+      <h1 class="hero-title">Requins-baleines<br><em>Les géants des mers</em></h1>
+      <p class="hero-sub">Disponible uniquement de juin à septembre · Riviera Maya · Expérience exclusive</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20souhaite%20nager%20avec%20les%20requins-baleines"
+           class="btn-primary-hero" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.118.549 4.106 1.508 5.83L.057 23.5a.5.5 0 00.613.612l5.748-1.435A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.95 9.95 0 01-5.193-1.456l-.372-.22-3.853.962.972-3.77-.242-.386A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Vérifier les disponibilités
+        </a>
+        <a href="#contenu" class="btn-outline-hero">Découvrir l'excursion ↓</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Fil d'Ariane">
+    <a href="index.html">Accueil</a>
+    <span class="breadcrumb-sep">›</span>
+    <a href="index.html#destinations">Destinations</a>
+    <span class="breadcrumb-sep">›</span>
+    <span>Requins-baleines</span>
+  </nav>
+
+  <main id="contenu" class="article-wrap">
+
+    <section class="article-intro" aria-labelledby="titre-principal">
+      <h2 id="titre-principal" class="article-h1">
+        Nage avec les requins-baleines depuis Playa del Carmen : une expérience exclusive dans les Caraïbes mexicaines
+      </h2>
+
+      <div class="season-block">
+        <div class="season-icon">🗓</div>
+        <div class="season-text-wrap">
+          <p class="season-label">Saison · Disponibilité</p>
+          <p class="season-text">Cette excursion est disponible <strong>uniquement de juin à septembre</strong>. Nous vous recommandons de réserver au moins 2 à 3 semaines à l'avance, les places étant limitées pour préserver l'expérience et respecter les réglementations de protection des espèces.</p>
+        </div>
+      </div>
+
+      <p class="article-lead">
+        Disponible uniquement de juin à septembre, cette excursion exceptionnelle vous offre l'opportunité rare de nager aux côtés des plus grands poissons du monde dans les eaux turquoise des Caraïbes mexicaines.
+      </p>
+      <p class="article-lead">
+        Depuis Playa del Carmen, partez vivre une aventure inoubliable au cœur de la Riviera Maya, à la rencontre des majestueux requins-baleines évoluant librement dans leur habitat naturel.
+      </p>
+    </section>
+
+    <div class="article-photo">
+      <img src="img/whale-shark.avif" alt="Requin-baleine dans les eaux turquoise des Caraïbes mexicaines" loading="lazy"/>
+    </div>
+
+    <section class="article-section" aria-labelledby="section-geants">
+      <h3 id="section-geants" class="article-h2">Une rencontre fascinante avec les <em>géants des mers</em></h3>
+      <p class="article-p">
+        Totalement inoffensifs pour l'Homme, les requins-baleines se nourrissent principalement de plancton et nagent paisiblement près de la surface.
+      </p>
+      <p class="article-p">
+        Leur déplacement lent permet une immersion unique et privilégiée : vous pourrez les accompagner à la nage lors d'un moment suspendu, particulièrement apprécié par les voyageurs en quête d'expériences exclusives au Mexique.
+      </p>
+    </section>
+
+    <section class="article-section" aria-labelledby="section-biodiversite">
+      <h3 id="section-biodiversite" class="article-h2">Une <em>biodiversité marine</em> spectaculaire</h3>
+      <p class="article-p">Au cours de cette aventure aquatique, vous aurez également la chance d'observer :</p>
+      <ul class="article-list">
+        <li>d'impressionnantes raies manta,</li>
+        <li>des bancs de poissons tropicaux,</li>
+        <li>et une incroyable diversité marine emblématique des Caraïbes.</li>
+      </ul>
+      <p class="article-p">
+        Les eaux cristallines de la Riviera Maya offrent des conditions idéales pour vivre cette expérience dans un cadre naturel exceptionnel.
+      </p>
+    </section>
+
+    <section class="article-section" aria-labelledby="section-riviera">
+      <h3 id="section-riviera" class="article-h2">Une excursion incontournable <em>en Riviera Maya</em></h3>
+      <p class="article-p">
+        Cette activité saisonnière figure parmi les expériences les plus prestigieuses à vivre lors d'un séjour à Playa del Carmen.
+      </p>
+      <p class="article-p">
+        Encadrée par des professionnels expérimentés, cette excursion premium allie sécurité, confort et émerveillement pour une clientèle francophone exigeante.
+      </p>
+    </section>
+
+    <div class="why-block">
+      <div class="why-tag">Pourquoi choisir cette excursion</div>
+      <h3 class="why-title">Requins-baleines depuis Playa del Carmen,<br><em>l'expérience d'une vie</em></h3>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <span class="why-text">Excursion premium au départ de Playa del Carmen</span>
+        </div>
+        <div class="why-item">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+          <span class="why-text">Guide francophone expert de la faune marine</span>
+        </div>
+        <div class="why-item">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <span class="why-text">Encadrement professionnel et sécurité maximale</span>
+        </div>
+        <div class="why-item">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+          <span class="why-text">Disponible uniquement de juin à septembre</span>
+        </div>
+        <div class="why-item">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <span class="why-text">Observation des raies manta et faune Caraïbes</span>
+        </div>
+        <div class="why-item">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <span class="why-text">Idéal pour une clientèle francophone exigeante</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-strip">
+      <span class="cta-strip-label">Réservation · Juin — Septembre</span>
+      <h3 class="cta-strip-title">Prêt pour <em>l'expérience d'une vie ?</em></h3>
+      <p class="cta-strip-sub">Places limitées · Réponse sous 24h · Devis gratuit · 100% en français 🇫🇷</p>
+      <div class="cta-strip-actions">
+        <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20l%27excursion%20requins-baleines%20%28juin-sept%29"
+           class="btn-wa" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.118.549 4.106 1.508 5.83L.057 23.5a.5.5 0 00.613.612l5.748-1.435A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.95 9.95 0 01-5.193-1.456l-.372-.22-3.853.962.972-3.77-.242-.386A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          WhatsApp — Vérifier les disponibilités
+        </a>
+        <a href="mailto:info@havanturescaribe.com" class="btn-email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+          Envoyer un email
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">Havantures<span>Caribe</span></div>
+    <nav class="footer-links" aria-label="Liens footer">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#destinations">Destinations</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#temoignages">Avis clients</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#blog">Blog</a>
+    </nav>
+    <p class="footer-copy">© 2025 Havantures Caribe · Excursions privées Riviera Maya · Guide francophone</p>
+  </footer>
+
+  <a href="https://wa.me/524491234567?text=Bonjour%2C%20je%20souhaite%20nager%20avec%20les%20requins-baleines"
+     class="sticky-cta" target="_blank" rel="noopener noreferrer" aria-label="Contacter sur WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.118.549 4.106 1.508 5.83L.057 23.5a.5.5 0 00.613.612l5.748-1.435A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.95 9.95 0 01-5.193-1.456l-.372-.22-3.853.962.972-3.77-.242-.386A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    <span>Devis gratuit</span>
+  </a>
+
+  <script>
+    window.addEventListener('scroll',()=>{const p=document.getElementById('scroll-progress');if(p){const h=document.documentElement;p.style.width=Math.min((window.scrollY/(h.scrollHeight-h.clientHeight))*100,100)+'%'}},{passive:true});
+  </script>
+</body>
+</html>
